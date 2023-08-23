@@ -1,5 +1,6 @@
 from pyfirestore import *
 from qrscan import *
+
 from test_arduino import *
 
 
@@ -22,3 +23,4 @@ def run_app(order) :
         
         queue.dequeue()
     run_arduino(positions)
+    

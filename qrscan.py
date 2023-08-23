@@ -22,6 +22,7 @@ def QRScan(product) :
         # print('row:',mydata,'coordinates of row:',barcode.rect)
         if mydata not in d and mydata != product:
             d[mydata] = barcode.rect[0]
+            print(barcode.rect)
 
         if mydata == product:
             dist = barcode.rect[0]
